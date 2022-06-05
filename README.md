@@ -61,6 +61,7 @@ En este caso previamente se debe hacer una transformación al dataframe para con
 ## Exportar datos de salida
 Para la exportación de los datos de salida, el primer paso será eliminar la función show() de todas nuestras consultas, esto debido a que show() hace que lo que nos retorne la consulta, ya no sea un dataframe sino simplemente una vista. Después de esto se creará una carpeta en el Google Drive llamada "outputs"; en esta carpeta irán todos los outputs. 
 ![image](https://user-images.githubusercontent.com/71454879/172073135-a3319fe5-f64b-4bf8-b928-028d7f6a5487.png)
+
 Asignaremos a una variable el dataframe nuevo que se obtiene con la consulta, en este caso esa variable es "data", luego se define la uri de la ubicación a donde queremos enviar el csv, en este caso además se ha definido que cada consula irá en una subcarpeta diferente (ver final de la uri en que dice la carpeta "3.4" para ese caso en particular). Finalmente se exporta el dataframe contenido en "data" en formato csv hacia la uri especificada. 
 
 Todos los numerales del punto 3 han sido exportados a excepción del numeral 3.6 pues no lo que retorna es un unico valor.
